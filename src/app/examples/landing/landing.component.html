@@ -1,4 +1,4 @@
-<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/lan.jpg');">
+<!-- <div id="main" class="page-header" data-parallax="true" style="background-image: url('./assets/img/lan.jpg');">
     <div class="filter"></div>
     <div class="container">
         <div class="motto text-center">
@@ -11,7 +11,7 @@
     </div>
 </div>
 
-<div class="main">
+<div id="services"class="main">
     <div class="section text-center">
     <div class="container">
         <div class="row">
@@ -77,7 +77,7 @@
     </div>
 </div>
 
-<div class="section section-dark text-center">
+<div id="aboutus" class="section section-dark text-center">
     <div class="container">
         <h2 class="title">Let's talk about us</h2>
         <div class="row">
@@ -156,7 +156,7 @@
     </div>
 </div>
 
-    <div class="section landing-section">
+    <div  id="contact"class="section landing-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mr-auto ml-auto">
@@ -194,4 +194,664 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Page Title</title>
+        <!-- <link rel="stylesheet" href="path/to/your/styles.css"> Add your CSS file here -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+        />
+        <style>
+            /* Navbar styles */
+            .navbar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.8);
+                z-index: 1000;
+                padding: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .navbar ul {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end; /* Aligns items to the right */
+                margin-left: auto;
+            }
+
+            .navbar li {
+                margin: 0 20px;
+            }
+
+            .navbar a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                padding-top: 60px; /* Space for fixed navbar */
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div
+            id="main"
+            class="page-header"
+            data-parallax="true"
+            style="background-image: url('./assets/img/bg1.jpg')"
+        >
+            <div class="filter"></div>
+            <div class="container">
+                <div class="motto text-center">
+                    <h1>Elevate Your Digital Presence.</h1>
+                    <h3>
+                        Unlock your brand's potential with our tailored
+                        strategies.
+                    </h3>
+                    <br />
+                    <a href="" class="btn btn-outline-neutral btn-round"
+                        ><i class="fa fa-play"></i> Watch our Success Stories</a
+                    >
+                    <button
+                        type="button"
+                        class="btn btn-outline-neutral btn-round"
+                    >
+                        Get a Free Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="services" class="main">
+            <div class="section text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mr-auto ml-auto">
+                            <h2 class="title">Let's talk product</h2>
+                            <h5 class="description">
+                                This is the paragraph where you can write more
+                                details about your product. Keep your user
+                                engaged by providing meaningful information.
+                                Remember that by this time, the user is curious,
+                                otherwise he wouldn't scroll to get here. Add a
+                                button if you want the user to see more.
+                            </h5>
+                            <br />
+                            <a
+                                href="#paper-kit"
+                                class="btn btn-danger btn-round"
+                                >See Details</a
+                            >
+                        </div>
+                    </div>
+                    <br /><br />
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="info">
+                                <div class="icon icon-danger">
+                                    <i class="nc-icon nc-album-2"></i>
+                                </div>
+                                <div class="description">
+                                    <h4 class="info-title">
+                                        Beautiful Gallery
+                                    </h4>
+                                    <p class="description">
+                                        Spend your time generating new ideas.
+                                        You don't have to think of implementing.
+                                    </p>
+                                    <a
+                                        href="#pkp"
+                                        class="btn btn-link btn-danger"
+                                        >See more</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="info">
+                                <div class="icon icon-danger">
+                                    <i class="nc-icon nc-bulb-63"></i>
+                                </div>
+                                <div class="description">
+                                    <h4 class="info-title">New Ideas</h4>
+                                    <p>
+                                        Larger, yet dramatically thinner. More
+                                        powerful, but remarkably power
+                                        efficient.
+                                    </p>
+                                    <a
+                                        href="#pkp"
+                                        class="btn btn-link btn-danger"
+                                        >See more</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="info">
+                                <div class="icon icon-danger">
+                                    <i class="nc-icon nc-chart-bar-32"></i>
+                                </div>
+                                <div class="description">
+                                    <h4 class="info-title">Statistics</h4>
+                                    <p>
+                                        Choose from a variety of many colors
+                                        resembling sugar paper pastels.
+                                    </p>
+                                    <a
+                                        href="#pkp"
+                                        class="btn btn-link btn-danger"
+                                        >See more</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="info">
+                                <div class="icon icon-danger">
+                                    <i class="nc-icon nc-sun-fog-29"></i>
+                                </div>
+                                <div class="description">
+                                    <h4 class="info-title">
+                                        Delightful design
+                                    </h4>
+                                    <p>
+                                        Find unique and handmade delightful
+                                        designs related items directly from our
+                                        sellers.
+                                    </p>
+                                    <a
+                                        href="#pkp"
+                                        class="btn btn-link btn-danger"
+                                        >See more</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div
+            id="services"
+            class="main"
+            style="background-color: #f1f1f1; padding: 40px 0"
+        >
+            <div class="section text-center">
+                <div class="container">
+                    <h2 class="title" style="color: #333">Our Services</h2>
+                    <h5 class="description" style="color: #777">
+                        Explore the range of services we offer to help your
+                        business thrive. From SEO to website development, we
+                        provide comprehensive solutions tailored to your needs.
+                    </h5>
+                    <br />
+                    <div class="row justify-content-center">
+                        <!-- SEO Service -->
+                        <div class="col-md-2">
+                            <div
+                                class="info"
+                                style="
+                                    background-color: #f8d7da;
+                                    padding: 20px;
+                                    border-radius: 8px;
+                                "
+                            >
+                                <div class="icon icon-danger">
+                                    <i
+                                        class="nc-icon nc-zoom-split"
+                                        style="color: #e74c3c; font-size: 40px"
+                                    ></i>
+                                </div>
+                                <div class="description">
+                                    <h4
+                                        class="info-title"
+                                        style="color: #e74c3c"
+                                    >
+                                        SEO
+                                    </h4>
+                                    <p>
+                                        On-page, Off-page, and Local SEO
+                                        services.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PPC Service -->
+                        <div class="col-md-2">
+                            <div
+                                class="info"
+                                style="
+                                    background-color: #fce4b2;
+                                    padding: 20px;
+                                    border-radius: 8px;
+                                "
+                            >
+                                <div class="icon icon-danger">
+                                    <i
+                                        class="nc-icon nc-credit-card"
+                                        style="color: #f39c12; font-size: 40px"
+                                    ></i>
+                                </div>
+                                <div class="description">
+                                    <h4
+                                        class="info-title"
+                                        style="color: #f39c12"
+                                    >
+                                        PPC
+                                    </h4>
+                                    <p>
+                                        Drive traffic with effective PPC
+                                        campaigns.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Ads Service -->
+                        <div class="col-md-2">
+                            <div
+                                class="info"
+                                style="
+                                    background-color: #d1ecf1;
+                                    padding: 20px;
+                                    border-radius: 8px;
+                                "
+                            >
+                                <div class="icon icon-danger">
+                                    <i
+                                        class="nc-icon nc-tv-2"
+                                        style="color: #3498db; font-size: 40px"
+                                    ></i>
+                                </div>
+                                <div class="description">
+                                    <h4
+                                        class="info-title"
+                                        style="color: #3498db"
+                                    >
+                                        Google Ads
+                                    </h4>
+                                    <p>
+                                        Reach your audience with tailored
+                                        campaigns.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Service -->
+                        <div class="col-md-2">
+                            <div
+                                class="info"
+                                style="
+                                    background-color: #d4edda;
+                                    padding: 20px;
+                                    border-radius: 8px;
+                                "
+                            >
+                                <div class="icon icon-danger">
+                                    <i
+                                        class="nc-icon nc-mobile"
+                                        style="color: #2ecc71; font-size: 40px"
+                                    ></i>
+                                </div>
+                                <div class="description">
+                                    <h4
+                                        class="info-title"
+                                        style="color: #2ecc71"
+                                    >
+                                        Social Media
+                                    </h4>
+                                    <p>
+                                        Connect with your audience effectively.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Web Design Service -->
+                        <div class="col-md-2">
+                            <div
+                                class="info"
+                                style="
+                                    background-color: #fff3cd;
+                                    padding: 20px;
+                                    border-radius: 8px;
+                                "
+                            >
+                                <div class="icon icon-danger">
+                                    <i
+                                        class="nc-icon nc-layout-11"
+                                        style="color: #f39c12; font-size: 40px"
+                                    ></i>
+                                </div>
+                                <div class="description">
+                                    <h4
+                                        class="info-title"
+                                        style="color: #f39c12"
+                                    >
+                                        Web Development
+                                    </h4>
+                                    <p>Beautiful and functional websites.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="aboutus" class="section section-dark text-center">
+            <div class="container">
+                <h2 class="title">About Our Company</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-profile card-plain">
+                            <div class="card-block">
+                                <h4 class="card-title">Who We Are</h4>
+                                <p class="card-description text-center">
+                                    Based in the vibrant city of Dubai, our
+                                    digital marketing company specializes in
+                                    connecting businesses with their audiences
+                                    in meaningful ways. We are a team of
+                                    creative thinkers, strategists, and tech
+                                    enthusiasts dedicated to crafting impactful
+                                    digital experiences. From designing visually
+                                    stunning campaigns to executing data-driven
+                                    strategies, we help businesses grow in an
+                                    ever-evolving digital landscape.
+                                </p>
+                                <p class="card-description text-center">
+                                    At the heart of what we do is a passion for
+                                    innovation and results. Whether you're a
+                                    start-up looking to make a mark or an
+                                    established brand aiming to expand, we
+                                    provide tailored solutions that meet your
+                                    unique goals.
+                                </p>
+                            </div>
+                            <div
+                                class="card-footer text-center social-media-section"
+                            >
+                                <a
+                                    href="https://www.tiktok.com/@a4_ads_?_t=8sef4XtOnLe&_r=1"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                >
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg"
+                                        alt="TikTok"
+                                        style="
+                                            width: 37px;
+                                            height: 22px;
+                                            filter: brightness(0) invert(1);
+                                        "
+                                    />
+                                </a>
+                                <a
+                                    href="https://www.facebook.com/share/1EcqmUoP8v/?mibextid=wwXIfr"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-facebook"></i
+                                ></a>
+                                <a
+                                    href="https://www.linkedin.com/"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-linkedin"></i
+                                ></a>
+                                <a
+                                    href="https://www.instagram.com/a4_ads_/profilecard/?igsh=cmhzcDZ1M2FheHR6"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-instagram"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="aboutus" class="section section-dark text-center">
+            <div class="container">
+                <h2 class="title">Let's talk about us</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar">
+                                <a href="#avatar"
+                                    ><img
+                                        src="./assets/img/faces/faheem.jpg"
+                                        alt="..."
+                                /></a>
+                            </div>
+                            <div class="card-block">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">
+                                            Muhammed Faheem
+                                        </h4>
+                                        <h6 class="card-category">
+                                            Digital Marketer
+                                        </h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">
+                                    As a digital marketer, my strength lies in
+                                    understanding trends and connecting with
+                                    audiences. By experimenting and analyzing
+                                    results, I craft strategies that drive
+                                    engagement and growth.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-twitter"></i
+                                ></a>
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-google-plus"></i
+                                ></a>
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-linkedin"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar">
+                                <a href="#avatar"
+                                    ><img
+                                        src="./assets/img/faces/mubarak.jpg"
+                                        alt="..."
+                                /></a>
+                            </div>
+                            <div class="card-block">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">
+                                            Mubarak Ahammed
+                                        </h4>
+                                        <h6 class="card-category">Designer</h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">
+                                    As a graphic designer, my strength is in
+                                    creativity and visual storytelling. By
+                                    exploring new ideas and techniques, I create
+                                    designs that communicate effectively and
+                                    leave a lasting impression.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-twitter"></i
+                                ></a>
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-google-plus"></i
+                                ></a>
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-linkedin"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar">
+                                <a href="#avatar"
+                                    ><img
+                                        src="./assets/img/faces/anwar.jpg"
+                                        alt="..."
+                                /></a>
+                            </div>
+                            <div class="card-block">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">Anwar K.V</h4>
+                                        <h6 class="card-category">Developer</h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">
+                                    As a developer, my strength comes from my
+                                    ideas. By constantly exploring and
+                                    challenging myself, I create better
+                                    software. I believe that standing still is
+                                    where problems arise.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-twitter"></i
+                                ></a>
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-google-plus"></i
+                                ></a>
+                                <a
+                                    href="#pablo"
+                                    class="btn btn-link btn-just-icon btn-neutral"
+                                    ><i class="fa fa-linkedin"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div id="contact" class="section landing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <h2 class="text-center">Keep in touch?</h2>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Name</label>
+                                    <div
+                                        class="input-group"
+                                        [ngClass]="{
+                                            'input-group-focus': focus === true
+                                        }"
+                                    >
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"
+                                                ><i
+                                                    class="nc-icon nc-single-02"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Name"
+                                            (focus)="focus = true"
+                                            (blur)="focus = false"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                    <div
+                                        class="input-group"
+                                        [ngClass]="{
+                                            'input-group-focus': focus1 === true
+                                        }"
+                                    >
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"
+                                                ><i
+                                                    class="nc-icon nc-email-85"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Email"
+                                            (focus)="focus1 = true"
+                                            (blur)="focus1 = false"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <label>Message</label>
+                            <textarea
+                                class="form-control"
+                                rows="4"
+                                placeholder="Tell us your thoughts and feelings..."
+                            ></textarea>
+                            <div class="row">
+                                <div class="col-md-4 mr-auto ml-auto">
+                                    <button
+                                        class="btn btn-danger btn-lg btn-fill"
+                                    >
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
