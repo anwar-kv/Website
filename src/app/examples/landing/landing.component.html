@@ -212,10 +212,11 @@
                 position: fixed;
                 top: 0;
                 width: 100%;
-                background-color: rgba(255, 255, 255, 0.8);
+                background-color: black;
                 z-index: 1000;
                 padding: 10px;
                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                color: #ffffff;
             }
 
             .navbar ul {
@@ -232,7 +233,7 @@
 
             .navbar a {
                 text-decoration: none;
-                color: #333;
+                color: #ffffff;
                 font-weight: bold;
             }
 
@@ -243,12 +244,53 @@
             body {
                 padding-top: 60px; /* Space for fixed navbar */
             }
+            /* Responsive Styles */
+            /*   @media screen and (max-width: 768px) {
+                .navbar ul {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 60px; /~ Adjust based on your navbar height ~/
+                    right: 0;
+                    background-color: rgba(255, 255, 255, 0.95);
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    width: 100%;
+                }
+
+                .navbar ul.active {
+                    display: flex;
+                }
+
+                .navbar-toggler {
+                    display: block;
+                }
+            }*/
         </style>
     </head>
 
     <body>
-        <nav class="navbar">
+        <!-- <nav class="navbar">
             <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav> -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./assets/img/a4ads.jpg" alt="Logo" />
+            </div>
+            <button class="navbar-toggler" (click)="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
+            <ul id="navbarMenu">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul id="mobileMenu" class="mobile-menu">
                 <li><a href="#main">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#aboutus">About Us</a></li>
@@ -408,15 +450,19 @@
                         provide comprehensive solutions tailored to your needs.
                     </h5>
                     <br />
-                    <div class="row justify-content-center">
+                    <div
+                        class="row d-flex justify-content-between align-items-stretch"
+                    >
                         <!-- SEO Service -->
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-12 mb-3">
                             <div
                                 class="info"
                                 style="
                                     background-color: #f8d7da;
                                     padding: 20px;
                                     border-radius: 8px;
+                                    word-wrap: break-word;
+                                    min-height: 250px;
                                 "
                             >
                                 <div class="icon icon-danger">
@@ -441,13 +487,15 @@
                         </div>
 
                         <!-- PPC Service -->
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-12 mb-3">
                             <div
                                 class="info"
                                 style="
                                     background-color: #fce4b2;
                                     padding: 20px;
                                     border-radius: 8px;
+                                    word-wrap: break-word;
+                                    min-height: 250px;
                                 "
                             >
                                 <div class="icon icon-danger">
@@ -472,13 +520,15 @@
                         </div>
 
                         <!-- Google Ads Service -->
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-12 mb-3">
                             <div
                                 class="info"
                                 style="
                                     background-color: #d1ecf1;
                                     padding: 20px;
                                     border-radius: 8px;
+                                    word-wrap: break-word;
+                                    min-height: 250px;
                                 "
                             >
                                 <div class="icon icon-danger">
@@ -503,13 +553,15 @@
                         </div>
 
                         <!-- Social Media Service -->
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-12 mb-3">
                             <div
                                 class="info"
                                 style="
                                     background-color: #d4edda;
                                     padding: 20px;
                                     border-radius: 8px;
+                                    word-wrap: break-word;
+                                    min-height: 250px;
                                 "
                             >
                                 <div class="icon icon-danger">
@@ -532,14 +584,16 @@
                             </div>
                         </div>
 
-                        <!-- Web Design Service -->
-                        <div class="col-md-2">
+                        <!-- Web Development Service -->
+                        <div class="col-md-2 col-12 mb-3">
                             <div
                                 class="info"
                                 style="
                                     background-color: #fff3cd;
                                     padding: 20px;
                                     border-radius: 8px;
+                                    word-wrap: break-word;
+                                    min-height: 250px;
                                 "
                             >
                                 <div class="icon icon-danger">
@@ -551,7 +605,11 @@
                                 <div class="description">
                                     <h4
                                         class="info-title"
-                                        style="color: #f39c12"
+                                        style="
+                                            color: #f39c12;
+                                            font-size: 1.1rem;
+                                            line-height: 1.2;
+                                        "
                                     >
                                         Web Development
                                     </h4>
@@ -559,6 +617,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Add more services here (optional) -->
                     </div>
                 </div>
             </div>

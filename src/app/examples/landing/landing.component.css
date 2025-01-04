@@ -62,3 +62,115 @@
     animation: none;
     /* Pause the bounce animation on hover */
 }
+
+.col-md-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    flex: 1;
+}
+
+.navbar .logo img {
+    width: 100px;
+    /* Adjust the logo size */
+    height: 26px;
+}
+
+/* Default for larger screens - Display the regular menu */
+/* Default for larger screens - Display the regular menu */
+/* Default for larger screens - Display the regular menu */
+#navbarMenu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Mobile menu styles - Hidden by default */
+/* Regular navbar styles */
+#navbarMenu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Mobile menu styles - Hidden by default */
+#mobileMenu {
+    display: none;
+    /* Hidden by default on mobile */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    /* Position below the navbar */
+    right: 0;
+    /* Align the mobile menu to the right */
+    width: 100%;
+    /* Full width of the screen */
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #333;
+    /* Set the desired background color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
+
+#mobileMenu li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+#mobileMenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+/* Hide the hamburger menu by default */
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    /* Adjust as needed */
+
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+
+    /* Hide the regular menu on mobile */
+    #navbarMenu {
+        display: none;
+    }
+
+    /* Show the hamburger menu only on mobile */
+    .navbar-toggler {
+        display: block;
+    }
+
+    /* Show the mobile menu when toggled */
+    #mobileMenu.show {
+        display: block;
+    }
+}
