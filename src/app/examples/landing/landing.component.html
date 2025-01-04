@@ -290,11 +290,17 @@
                 <li><a href="#aboutus">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <ul id="mobileMenu" class="mobile-menu">
+            <!-- <ul id="mobileMenu" class="mobile-menu">
                 <li><a href="#main">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#aboutus">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+            </ul> -->
+            <ul id="mobileMenu" class="mobile-menu">
+                <li><a href="#main" class="menu-link">Home</a></li>
+                <li><a href="#services" class="menu-link">Services</a></li>
+                <li><a href="#aboutus" class="menu-link">About Us</a></li>
+                <li><a href="#contact" class="menu-link">Contact</a></li>
             </ul>
         </nav>
 
@@ -306,19 +312,49 @@
         >
             <div class="filter"></div>
             <div class="container">
-                <div class="motto text-center">
-                    <h1>Elevate Your Digital Presence.</h1>
-                    <h3>
+                <div
+                    class="motto text-center"
+                    style="
+                        color: #fff;
+                        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+                    "
+                >
+                    <h1
+                        style="
+                            font-family: 'Arial', sans-serif;
+                            font-weight: bold;
+                            font-size: 3rem;
+                            color: #fff;
+                        "
+                    >
+                        Elevate Your Digital Presence.
+                    </h1>
+                    <h3
+                        style="
+                            font-family: 'Arial', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.5rem;
+                            color: #f4f4f4;
+                        "
+                    >
                         Unlock your brand's potential with our tailored
                         strategies.
                     </h3>
                     <br />
-                    <a href="" class="btn btn-outline-neutral btn-round"
-                        ><i class="fa fa-play"></i> Watch our Success Stories</a
-                    >
+                    <!-- Optional buttons -->
+                    <!-- <a href="" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i> Watch our Success Stories</a> -->
                     <button
                         type="button"
                         class="btn btn-outline-neutral btn-round"
+                        style="
+                            border: 2px solid #fff;
+                            color: #fff;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        "
+                        onmouseover="this.style.backgroundColor='#fff'; this.style.color='#000';"
+                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#fff';"
+                        onclick="window.open('https://wa.me/+971507864146?text=Hi%2C%20I%20would%20like%20a%20free%20consultation.', '_blank')"
                     >
                         Get a Free Consultation
                     </button>
@@ -458,7 +494,7 @@
                             <div
                                 class="info"
                                 style="
-                                    background-color: #f8d7da;
+                                    background-color: #000;
                                     padding: 20px;
                                     border-radius: 8px;
                                     word-wrap: break-word;
@@ -468,17 +504,14 @@
                                 <div class="icon icon-danger">
                                     <i
                                         class="nc-icon nc-zoom-split"
-                                        style="color: #e74c3c; font-size: 40px"
+                                        style="color: #fff; font-size: 40px"
                                     ></i>
                                 </div>
                                 <div class="description">
-                                    <h4
-                                        class="info-title"
-                                        style="color: #e74c3c"
-                                    >
+                                    <h4 class="info-title" style="color: #fff">
                                         SEO
                                     </h4>
-                                    <p>
+                                    <p style="color: #fff">
                                         On-page, Off-page, and Local SEO
                                         services.
                                     </p>
@@ -491,7 +524,7 @@
                             <div
                                 class="info"
                                 style="
-                                    background-color: #fce4b2;
+                                    background-color: #000;
                                     padding: 20px;
                                     border-radius: 8px;
                                     word-wrap: break-word;
@@ -501,17 +534,14 @@
                                 <div class="icon icon-danger">
                                     <i
                                         class="nc-icon nc-credit-card"
-                                        style="color: #f39c12; font-size: 40px"
+                                        style="color: #fff; font-size: 40px"
                                     ></i>
                                 </div>
                                 <div class="description">
-                                    <h4
-                                        class="info-title"
-                                        style="color: #f39c12"
-                                    >
+                                    <h4 class="info-title" style="color: #fff">
                                         PPC
                                     </h4>
-                                    <p>
+                                    <p style="color: #fff">
                                         Drive traffic with effective PPC
                                         campaigns.
                                     </p>
@@ -524,7 +554,7 @@
                             <div
                                 class="info"
                                 style="
-                                    background-color: #d1ecf1;
+                                    background-color: #000;
                                     padding: 20px;
                                     border-radius: 8px;
                                     word-wrap: break-word;
@@ -534,17 +564,14 @@
                                 <div class="icon icon-danger">
                                     <i
                                         class="nc-icon nc-tv-2"
-                                        style="color: #3498db; font-size: 40px"
+                                        style="color: #fff; font-size: 40px"
                                     ></i>
                                 </div>
                                 <div class="description">
-                                    <h4
-                                        class="info-title"
-                                        style="color: #3498db"
-                                    >
+                                    <h4 class="info-title" style="color: #fff">
                                         Google Ads
                                     </h4>
-                                    <p>
+                                    <p style="color: #fff">
                                         Reach your audience with tailored
                                         campaigns.
                                     </p>
@@ -557,7 +584,7 @@
                             <div
                                 class="info"
                                 style="
-                                    background-color: #d4edda;
+                                    background-color: #000;
                                     padding: 20px;
                                     border-radius: 8px;
                                     word-wrap: break-word;
@@ -567,17 +594,14 @@
                                 <div class="icon icon-danger">
                                     <i
                                         class="nc-icon nc-mobile"
-                                        style="color: #2ecc71; font-size: 40px"
+                                        style="color: #fff; font-size: 40px"
                                     ></i>
                                 </div>
                                 <div class="description">
-                                    <h4
-                                        class="info-title"
-                                        style="color: #2ecc71"
-                                    >
+                                    <h4 class="info-title" style="color: #fff">
                                         Social Media
                                     </h4>
-                                    <p>
+                                    <p style="color: #fff">
                                         Connect with your audience effectively.
                                     </p>
                                 </div>
@@ -589,7 +613,7 @@
                             <div
                                 class="info"
                                 style="
-                                    background-color: #fff3cd;
+                                    background-color: #000;
                                     padding: 20px;
                                     border-radius: 8px;
                                     word-wrap: break-word;
@@ -599,21 +623,23 @@
                                 <div class="icon icon-danger">
                                     <i
                                         class="nc-icon nc-layout-11"
-                                        style="color: #f39c12; font-size: 40px"
+                                        style="color: #fff; font-size: 40px"
                                     ></i>
                                 </div>
                                 <div class="description">
                                     <h4
                                         class="info-title"
                                         style="
-                                            color: #f39c12;
+                                            color: #fff;
                                             font-size: 1.1rem;
                                             line-height: 1.2;
                                         "
                                     >
                                         Web Development
                                     </h4>
-                                    <p>Beautiful and functional websites.</p>
+                                    <p style="color: #fff">
+                                        Beautiful and functional websites.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -845,7 +871,10 @@
                         <form class="contact-form">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Name</label>
+                                    <label
+                                        style="color: #333; font-weight: bold"
+                                        >Name</label
+                                    >
                                     <div
                                         class="input-group"
                                         [ngClass]="{
@@ -869,7 +898,10 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label>Email</label>
+                                    <label
+                                        style="color: #333; font-weight: bold"
+                                        >Email</label
+                                    >
                                     <div
                                         class="input-group"
                                         [ngClass]="{
@@ -893,7 +925,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <label>Message</label>
+                            <label style="color: #333; font-weight: bold"
+                                >Message</label
+                            >
                             <textarea
                                 class="form-control"
                                 rows="4"
@@ -902,7 +936,12 @@
                             <div class="row">
                                 <div class="col-md-4 mr-auto ml-auto">
                                     <button
-                                        class="btn btn-danger btn-lg btn-fill"
+                                        class="btn btn-lg btn-fill"
+                                        style="
+                                            background-color: #000;
+                                            color: #fff;
+                                            border: 1px solid #fff;
+                                        "
                                     >
                                         Send Message
                                     </button>

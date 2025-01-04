@@ -46,5 +46,11 @@ export class LandingComponent implements OnInit {
         const mobileMenu = document.getElementById("mobileMenu");
         mobileMenu.classList.toggle("show");
         console.log(mobileMenu);
+        const menuLinks = document.querySelectorAll("#mobileMenu .menu-link");
+        menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.remove("show");
+            });
+        });
     }
 }
