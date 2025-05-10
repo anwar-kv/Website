@@ -107,7 +107,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: #000080;
+    background-color: #141e3b;
     position: absolute;
     top: 60px;
     /* Position below the navbar */
@@ -119,7 +119,7 @@
 }
 
 .navbar {
-    background-color: #000080;
+    background-color: #141e3b;
     /* Set the desired background color */
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@
     border: none;
     font-size: 30px;
     cursor: pointer;
-    color: #000080;
+    color: #141e3b;
     right: 10px;
     top: 10px;
     position: absolute;
